@@ -65,7 +65,7 @@ header .duration p {
   padding: 10px;
   border-radius: 10px;
   background-color: #1E1E1E;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .content .stream iframe {
@@ -74,7 +74,7 @@ header .duration p {
 
 
 .content .info {
-  margin-left: 10px;
+  margin-right: 10px;
   padding: 15px;
   border-radius: 10px;
   background-color: #1E1E1E;
@@ -97,9 +97,13 @@ header .duration p {
   font-size: 22px;
 }
 
+ul {
+  padding-left: 0px;
+}
+
 li {
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 20px;
   list-style-type: none;
   padding: 1em;
   text-transform: uppercase;
@@ -108,5 +112,43 @@ li {
 
 li span {
   display: block;
-  font-size: 4.5rem;
+  font-size: 55px;
+}
+
+/* Mobile responsive shit */
+
+@media only screen and (max-width: 960px) {
+  .content {
+    display: block;
+}
+
+.stream {
+    display: flex;
+    justify-content: center;
+    margin-left: 40px!important;
+    margin-bottom: 20px!important;
+    margin: 40px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    width: auto!important;
+    margin-right: 40px!important;
+    margin-top: 10px!important;
+    margin: 40px;
+    align-items: center;
+}
+
+.info >p {
+    padding: 20px;
+}
+
+li {
+    font-size: 9px;
+}
+
+li span {
+    font-size: 30px;
+}
 }
