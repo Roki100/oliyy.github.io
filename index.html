@@ -1,118 +1,33 @@
-<style>
-body {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  background-color: #101010;
-}
+<html>
+<head>
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="title">Oliy's Flying Stream</div>
+      <ul>
+         <li><span id="days"></span>days</li>
+         <li><span id="hours"></span>Hours</li>
+         <li><span id="minutes"></span>Minutes</li>
+         <li><span id="seconds"></span>Seconds</li>
+      </ul>
+      <div class="flight">
+        <div class="starting-airport airport"><p>LHR</p></div>
+        <div class="progess"><span class="line"></span></div>
+        <div class="destination-airport airport"><p>LAX</p></div>
+      </div>
+      <div class="duration"><p>11 hrs 20 minutes approx.</p></div>
+    </div>
+  </header>
 
-.bg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 0;
-  width: 100%;
-  padding-bottom: 100%;
-  background-repeat: no-repeat;
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/62921/spinny-batman.gif);
-  background-size: cover;
-  background-position: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-animation: spin 0.3s linear infinite;
-          animation: spin 0.3s linear infinite;
-  -webkit-filter: blur(20px);
-          filter: blur(20px);
-  border-radius: 100%;
-}
-
-.callout {
-  position: absolute;
-  color: white;
-  font-family: monospace;
-  font-size: 2em;
-  bottom: 0.2em;
-  text-align: center;
-  width: 100%;
-}
-
-.finger {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 16em;
-  -webkit-animation: in-out 1.5s ease-in-out infinite;
-          animation: in-out 1.5s ease-in-out infinite;
-  z-index: 1;
-}
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: translate(-50%, -50%) rotate(0deg);
-            transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translate(-50%, -50%) rotate(360deg);
-            transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  0% {
-    -webkit-transform: translate(-50%, -50%) rotate(0deg);
-            transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translate(-50%, -50%) rotate(360deg);
-            transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-@-webkit-keyframes in-out {
-  0% {
-    -webkit-transform: translate(-50%, -50%) scale(0.4);
-            transform: translate(-50%, -50%) scale(0.4);
-  }
-  50% {
-    -webkit-transform: translate(-50%, -50%) scale(1.75);
-            transform: translate(-50%, -50%) scale(1.75);
-  }
-  100% {
-    -webkit-transform: translate(-50%, -50%) scale(0.4);
-            transform: translate(-50%, -50%) scale(0.4);
-  }
-}
-@keyframes in-out {
-  0% {
-    -webkit-transform: translate(-50%, -50%) scale(0.4);
-            transform: translate(-50%, -50%) scale(0.4);
-  }
-  50% {
-    -webkit-transform: translate(-50%, -50%) scale(1.75);
-            transform: translate(-50%, -50%) scale(1.75);
-  }
-  100% {
-    -webkit-transform: translate(-50%, -50%) scale(0.4);
-            transform: translate(-50%, -50%) scale(0.4);
-  }
-}
-
-</style>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<div class="bg"></div>
-<!-- <div class="finger">🖕</div> -->
-<img class="finger" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/62921/middle-finger-emoji.png" alt="" />
-<h6 class="callout">Click for sound</h6>
-
-<audio id="batman" autoplay>
-  <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/62921/batman-transition-sound.mp3" type="audio/ogg">
-</audio>
-
-<script>
-  document.body.addEventListener('click', function() {
-  var batman = document.getElementById('batman');
-  batman.play();
-})
-</script>
+  <div class="content">
+    <div class="stream"><iframe width="600" height="400" src="https://www.youtube.com/embed/live_stream?channel=UCGt5sr9Qs-rzpKyQ5WFdE_Q"></iframe></div>
+    <div class="info">
+      <a href="https://streamlabs.com/oliybarrett/tip" target="_blank"><p class="donate">Donate</p></a>
+      <p>I'm going to be streaming me flying an Airbus A380 to Los Angeles from London Heathrow live on Microsoft Flight Simulator. I've estimated this to take around 11 hours and I'll be streaming all of it. Feel free to donate to help end of suffering thanks :D</p>
+    </div>
+  </div>
+</body>
+<script src="countdown.js"></script>
+</html>

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+
+* {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+  background-color: #121212;
+  padding: 0;
+  margin: 0;
+}
+
+iframe {
+  border: none;
+}
+
+header {
+  text-align: center;
+  background-image: linear-gradient(to right, #9d50bb, #6e48aa);
+  padding: 40px;
+}
+
+header .title {
+  font-size: 44px;
+  font-weight: bold;
+  color: white;
+}
+
+header .flight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px!important;
+  margin-top: 30px;
+}
+
+header .flight .airport {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  margin: 10px;
+}
+
+header .flight .line {
+  width: 100px;
+  height: 6px;
+  background-color: white;
+  display: block;
+  color: white;
+  border-radius: 25px;
+}
+
+header .duration p {
+  margin:0;
+  color: white;
+}
+
+.content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.content .stream {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #1E1E1E;
+  margin-right: 10px;
+}
+
+.content .stream iframe {
+  border: none;
+}
+
+
+.content .info {
+  margin-left: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #1E1E1E;
+  width: 250px;
+  color: white;
+
+}
+
+.content .info a {
+  text-decoration: none;
+}
+
+.content .info .donate {
+  background-image: linear-gradient(to right, #9d50bb, #6e48aa);
+  padding: 20px;
+  margin:0;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+  color: white;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
