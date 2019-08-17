@@ -1,6 +1,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.css" type="text/css">
   <title>Oliy's Streams</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#6e48aa">
@@ -10,6 +11,26 @@
   <meta name="twitter:description" content="Oliy streaming himself doing a variety of things, probably flying planes. Keep updated on this page.">
 </head>
 <body>
+
+  <div id="donation" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Thank you for wanting to donate! <i class="icon heart" style="color: red;"></i></h2>
+      </div>
+      <div class="modal-body">
+        <p>I appreciate every single one of you UwU 😊</p>
+        <p>I want to donate all the money I get from this stream either to a charity or sponsor some animal(s) longer term but I haven't decided yet. I'm open to ideas in the chat or in Discord :)</p>
+        <p>If you choose to donate your message will be displayed on stream :D</p>
+        <p>Depending on much we get I will try to match the amount with my own money for the donation/sponsor <i class="icon heart" style="color: red;"></i></p>
+      </div>
+      <div class="modal-footer">
+        <a href="https://streamlabs.com/oliybarrett/tip" class="donate linkproceed" target="_blank"><p class="donate proceed"><i class="hand point right outline icon"></i>Proceed to donation site...</p></a>
+      </div>
+    </div>
+
+  </div>
+
   <header>
     <div class="container">
       <div class="title">Oliy's Flying Stream</div>
@@ -30,13 +51,15 @@
 
   <div class="content">
     <div class="info">
-      <a href="https://streamlabs.com/oliybarrett/tip" target="_blank"><p class="donate">Donate</p></a>
-      <p>I'm going to be streaming myself flying an Airbus A380 to Los Angeles from London Heathrow live on Microsoft Flight Simulator. I've estimated this to take around 11 hours and I'll be streaming all of it. Feel free to donate to help end of suffering thanks :D</p>
-      <p>During the 11 hours we'll answer your questions, meme around pray Microsoft Flight Simulator doesn't crash.</p>
+      <p class="donate" id="donatebutton">Donate</p>
+      <p>I'm going to be streaming myself flying an Airbus A380 to Los Angeles from London Heathrow live on Microsoft Flight Simulator. I've estimated this to take around 11 hours and I'll be streaming all of it.</p>
+      <p>Feel free to donate, all proceeds are going to charity we will pick on the stream. Click Donate above for more information</p>
+      <p>During I'll be answering questions and much more 😊</p>
 
     </div>
     <div class="stream"><iframe width="600" height="400" src="https://www.youtube.com/embed/live_stream?channel=UCGt5sr9Qs-rzpKyQ5WFdE_Q"></iframe></div>
   </div>
 </body>
+<script src="modal.js"></script>
 <script src="countdown.js"></script>
 </html>
