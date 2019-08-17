@@ -279,3 +279,11 @@ li span {
 .linkproceed {
     text-decoration: none;
 }
+
+.livenow {
+  text-transform: uppercase;
+  color: red;
+  font-weight: bold;
+  font-size: 44px;
+  padding-top: 40px;
+}
